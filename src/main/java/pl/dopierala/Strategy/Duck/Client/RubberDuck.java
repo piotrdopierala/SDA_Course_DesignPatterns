@@ -1,7 +1,7 @@
-package pl.dopierala.Strategy.Client;
+package pl.dopierala.Strategy.Duck.Client;
 
-import pl.dopierala.Strategy.Flying.NotFlying;
-import pl.dopierala.Strategy.Quack.NoSound;
+import pl.dopierala.Strategy.Duck.Flying.NotFlying;
+import pl.dopierala.Strategy.Duck.Quack.NoSound;
 
 public class RubberDuck extends Duck {
     public RubberDuck() {

@@ -1,4 +1,4 @@
-package pl.dopierala.Strategy.Client;
+package pl.dopierala.Strategy.Duck.Client;
 
 public class Client {
     public static void main(String[] args) {

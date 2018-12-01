@@ -1,4 +1,4 @@
-package pl.dopierala.Strategy.Flying;
+package pl.dopierala.Strategy.Duck.Flying;
 
 public class Flying implements FlyingInterface {
     @Override

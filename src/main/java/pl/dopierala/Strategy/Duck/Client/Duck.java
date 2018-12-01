@@ -1,7 +1,7 @@
-package pl.dopierala.Strategy.Client;
+package pl.dopierala.Strategy.Duck.Client;
 
-import pl.dopierala.Strategy.Flying.FlyingInterface;
-import pl.dopierala.Strategy.Quack.QuackInterface;
+import pl.dopierala.Strategy.Duck.Flying.FlyingInterface;
+import pl.dopierala.Strategy.Duck.Quack.QuackInterface;
 
 public abstract class Duck {
     private FlyingInterface flying;

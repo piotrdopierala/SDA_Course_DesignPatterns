@@ -1,4 +1,4 @@
-package pl.dopierala.Strategy.Quack;
+package pl.dopierala.Strategy.Duck.Quack;
 
 public class Quack implements QuackInterface {
     @Override
