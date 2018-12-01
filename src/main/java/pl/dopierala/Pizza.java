@@ -19,4 +19,10 @@ public abstract class Pizza implements Dish {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
+    @Override
+    public String toString() {
+        return "Pizza{" + "desc="+description()+", price=" + price +", weight=" + weight +'}';
+    }
+
 }

@@ -2,14 +2,15 @@ package pl.dopierala;
 
 public class Margaritha extends Pizza {
 
-    public Margaritha() {
-        this.price=10.0;
-        this.weight=11.0;
+    public Margaritha(double price, double weight) {
+        setPrice(price);
+        setWeight(weight);
     }
 
     @Override
     public String description() {
-        System.out.println("Pizza Marharitha");
-        return null;
+        String desc = "Pizza Marharitha has been baked.";
+        //System.out.println(desc);
+        return desc;
     }
 }
