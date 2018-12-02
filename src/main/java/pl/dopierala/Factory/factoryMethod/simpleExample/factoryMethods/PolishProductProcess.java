@@ -1,6 +1,5 @@
 package pl.dopierala.Factory.factoryMethod.simpleExample.factoryMethods;
 
-
 import pl.dopierala.Factory.factoryMethod.simpleExample.product.PolishRoundProduct;
 import pl.dopierala.Factory.factoryMethod.simpleExample.product.PolishSquareProduct;
 import pl.dopierala.Factory.factoryMethod.simpleExample.product.Product;

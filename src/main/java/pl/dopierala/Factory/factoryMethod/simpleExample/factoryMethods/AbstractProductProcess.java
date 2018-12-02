@@ -1,6 +1,5 @@
 package pl.dopierala.Factory.factoryMethod.simpleExample.factoryMethods;
 
-
 import pl.dopierala.Factory.factoryMethod.simpleExample.product.Product;
 
 public abstract class AbstractProductProcess {
