@@ -4,11 +4,12 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Assert;
 import org.junit.Test;
+import pl.dopierala.Observer.EmergencyDispatch.AssetsObservers.FirstAmbulance;
+import pl.dopierala.Observer.EmergencyDispatch.AssetsObservers.SecondAmbulance;
+import pl.dopierala.Observer.EmergencyDispatch.AssetsObservers.ThirdAmbulance;
+import pl.dopierala.Observer.EmergencyDispatch.Subject.OperatorAdam;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
+public class AppTest
 {
     @Test
     public void shouldCreateMargatrita(){
@@ -22,10 +23,16 @@ public class AppTest
     }
 
     @Test
-    public void should(){
+    public void shouldSendAllAmbulances(){
         //given
+        OperatorAdam opAdam = new OperatorAdam();
+        FirstAmbulance amb1 = new FirstAmbulance(opAdam);
+        SecondAmbulance amb2 = new SecondAmbulance(opAdam);
+        ThirdAmbulance amb3 = new ThirdAmbulance(opAdam);
         //when
+        ((OperatorAdam) opAdam).setStatus("Car accident");
         //then
+        Assert.assertTrue( opAdam.getStatus().equals(amb1.getStatus()));
     }
 
 
