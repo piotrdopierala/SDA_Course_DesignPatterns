@@ -26,17 +26,14 @@ public class FirstAmbulance implements IAmbulance {
         incidentCnt++;
         isFree=false;
 
-        Runnable incidentRun = new Runnable() {
-            @Override
-            public void run() {
-                if (!isFree) {
-                    try {
-                        Thread.sleep(7000);
-                        isFree=true;
-                        System.out.println(FirstAmbulance.class.getSimpleName()+" is free.");
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+        Runnable incidentRun = () -> {
+            if (!isFree) {
+                try {
+                    Thread.sleep(7000);
+                    isFree=true;
+                    System.out.println(FirstAmbulance.class.getSimpleName()+" is free.");
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
         };
